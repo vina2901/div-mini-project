@@ -1,26 +1,43 @@
 @import "tailwindcss";
+@import "@dvnnshmr/web-components/theme.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  min-height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+/* Scope the SubSense primary action to the login page.
+   This preserves the team's published component styles elsewhere. */
+.subsense-login .custom-button-root.btn-primary:not(:disabled) {
+  background-color: #0f766e;
+  color: #ffffff;
+}
+
+.subsense-login .custom-button-root.btn-primary:not(:disabled):hover {
+  background-color: #115e59;
+}
+
+.subsense-login .custom-button-root.btn-primary:focus-visible {
+  outline: 3px solid #5eead4;
+  outline-offset: 2px;
 }
