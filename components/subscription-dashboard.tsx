@@ -91,7 +91,7 @@ function Sidebar() {
         ))}
       </Box>
       <Box sx={{ mt: "auto", display: { xs: "none", md: "block" }, p: 2, bgcolor: "#F0FDF9", borderRadius: 3 }}>
-        <Typography sx={{ color: "primary.dark", fontSize: 13, fontWeight: 750 }}>You're in control.</Typography>
+        <Typography sx={{ color: "primary.dark", fontSize: 13, fontWeight: 750 }}>You&apos;re in control.</Typography>
         <Typography sx={{ mt: 0.7, color: "text.secondary", fontSize: 12 }}>Your subscriptions, organized in one place.</Typography>
       </Box>
     </Box>
@@ -130,7 +130,7 @@ export function SubscriptionDashboard({ userName }: { userName: string }) {
             <Box>
               <Typography sx={{ fontSize: 12, fontWeight: 800, letterSpacing: "0.13em", color: "primary.main", textTransform: "uppercase" }}>Your subscription space</Typography>
               <Typography component="h1" sx={{ fontWeight: 850, fontSize: { xs: 27, sm: 34 }, letterSpacing: "-0.04em", mt: 0.3 }}>Welcome back, {userName}!</Typography>
-              <Typography sx={{ color: "text.secondary", fontSize: 14, mt: 0.5 }}>Here's your subscription overview at a glance.</Typography>
+              <Typography sx={{ color: "text.secondary", fontSize: 14, mt: 0.5 }}>Here&apos;s your subscription overview at a glance.</Typography>
             </Box>
             <SignOutButton />
           </Box>
