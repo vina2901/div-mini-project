@@ -6,6 +6,7 @@ Prisma ORM with MySQL, and Better Auth email/password authentication.
 ## Included routes
 
 - `/` — login page
+- `/dashboard` — authenticated landing page
 - `/api/auth/[...all]` — Better Auth route handler
 
 ## Local setup
